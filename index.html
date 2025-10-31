@@ -41,6 +41,13 @@
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
       gap: 15px;
+   
+/* Force 2 cards per row on mobile */
+@media (max-width: 600px) {
+  .matches {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
     }
 
     /* Card Style */
