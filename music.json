@@ -8,7 +8,6 @@
       "title": "Star Sports 1 Hindi",
       "src": "https://cricstream4u.github.io/cinearena/star1hindi.jpg",
       "status": "LIVE",
-      "event_name": "Cricket Live",
       "match_id": 101001,
       "url": "https://cricstream4u.github.io/jwplyr/?file=https://example.com/star1hindi.m3u8"
     },
@@ -17,7 +16,6 @@
       "title": "Sony Ten 1",
       "src": "https://cricstream4u.github.io/cinearena/sonyten1.jpg",
       "status": "UPCOMING",
-      "event_name": "Football Highlights",
       "match_id": 101002,
       "url": "https://cricstream4u.github.io/jwplyr/?file=https://example.com/sonyten1.m3u8"
     },
@@ -26,7 +24,6 @@
       "title": "Eurosport",
       "src": "https://cricstream4u.github.io/cinearena/eurosport.jpg",
       "status": "LIVE",
-      "event_name": "Cycling Tournament",
       "match_id": 101003,
       "url": "https://cricstream4u.github.io/jwplyr/?file=https://example.com/eurosport.m3u8"
     },
@@ -35,7 +32,6 @@
       "title": "Show Box",
       "src": "https://cricstream4u.github.io/cinearena/showbox.jpg",
       "status": "LIVE",
-      "event_name": "Show Box",
       "match_id": 137890,
       "url": "https://cricstream4u.github.io/jwplyr/?file=https://epiconvh.akamaized.net/live/showbox/master.m3u8"
     },
@@ -44,7 +40,6 @@
       "title": "B4U Music",
       "src": "https://cricstream4u.github.io/cinearena/b4umusic.jpg",
       "status": "LIVE",
-      "event_name": "B4U Music",
       "match_id": 137891,
       "url": "https://cricstream4u.github.io/jwplyr/?file=https://amg00877-b4unew-amg00877c3-lg-in-5261.playouts.now.amagi.tv/playlist.m3u8"
     },
@@ -53,7 +48,6 @@
       "title": "YRF Music",
       "src": "https://cricstream4u.github.io/cinearena/yrfmusic.jpg",
       "status": "LIVE",
-      "event_name": "YRF Music",
       "match_id": 137892,
       "url": "https://cricstream4u.github.io/jwplyr/?file=https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg01412-xiaomiasia-yrfmusic-xiaomi/playlist.m3u8"
     },
@@ -62,7 +56,6 @@
       "title": "Masti",
       "src": "https://cricstream4u.github.io/cinearena/masti.jpg",
       "status": "LIVE",
-      "event_name": "Masti Music",
       "match_id": 137893,
       "url": "https://cricstream4u.github.io/jwplyr/?file=https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26c7309312/mastiii/master.m3u8"
     },
@@ -71,7 +64,6 @@
       "title": "Joo Music",
       "src": "https://cricstream4u.github.io/cinearena/joomusic.jpg",
       "status": "LIVE",
-      "event_name": "Joo Music",
       "match_id": 137894,
       "url": "https://cricstream4u.github.io/jwplyr/?file=https://livecdn.live247stream.com/joomusic/tv/playlist.m3u8"
     },
@@ -80,7 +72,6 @@
       "title": "9XM Jalwa",
       "src": "https://cricstream4u.github.io/cinearena/9xjalwa.jpg",
       "status": "LIVE",
-      "event_name": "9XM Jalwa",
       "match_id": 137895,
       "url": "https://cricstream4u.github.io/jwplyr/?file=https://amg01281-9xmediapvtltd-9xjalwa-samsungin-goszf.amagi.tv/playlist/amg01281-9xmediapvtltd-9xjalwa-samsungin/playlist.m3u8"
     }
