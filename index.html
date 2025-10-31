@@ -59,9 +59,7 @@
           <img src="${match.src}" alt="${match.match_name}">
           <div class="match-info">
             <h3>${match.title}</h3>
-            <p><strong>${match.team_1}</strong> vs <strong>${match.team_2}</strong></p>
             <p>🏆 ${match.event_name}</p>
-            <p>🕒 ${match.startTime}</p>
             <p class="status ${match.status}">${match.status}</p>
           </div>
           <button class="play-btn">▶ Play</button>
@@ -70,8 +68,8 @@
         card.querySelector(".play-btn").addEventListener("click", () => {
           if (match.adfree_url) {
             // Cut everything after `.m3u8`
-            let cleanUrl = match.adfree_url;
-            console.log("Opening clean adfree_url:", cleanUrl);
+            let cleanUrl = url;
+            console.log("Opening url:", cleanUrl);
             window.open(cleanUrl, "_blank");
           } else {
             alert("No adfree_url available for this match!");
