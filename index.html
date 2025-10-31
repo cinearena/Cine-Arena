@@ -34,10 +34,10 @@
 </head>
 <body>
 
-  <h3>📺 Sports Live</h3>
+  <h1>📺 Sports Live</h1>
   <div id="sports" class="matches"></div>
 
-  <h3>🎵 Music Live</h3>
+  <h1>🎵 Music Live</h1>
   <div id="music" class="matches"></div>
 
   <script>
@@ -56,7 +56,7 @@
         card.innerHTML = `
           <img src="${match.src}" alt="${match.title}">
           <h3>${match.title}</h3>
-          
+          <p>${match.event_name}</p>
           <p class="status ${match.status}">${match.status}</p>
           <button class="play-btn">▶ Play</button>
         `;
