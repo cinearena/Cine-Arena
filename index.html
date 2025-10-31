@@ -44,43 +44,43 @@
   <div id="matches" class="matches"></div>
 
   <script>
-    async function loadMatches() {
-      const url = "https://raw.githubusercontent.com/cinearena/Cine-Arena/refs/heads/main/music.json";
-      const response = await fetch(url);
-      const data = await response.json();
+  async function loadMatches() {
+    const url = "https://raw.githubusercontent.com/cinearena/Cine-Arena/refs/heads/main/music.json";
+    const response = await fetch(url);
+    const data = await response.json();
 
-      const matchesDiv = document.getElementById("matches");
+    const sportsDiv = document.getElementById("sports");
+    const musicDiv = document.getElementById("music");
 
-      data.matches.forEach(match => {
-        const card = document.createElement("div");
-        card.className = "match-card";
+    data.matches.forEach(match => {
+      const card = document.createElement("div");
+      card.className = "match-card";
 
-        card.innerHTML = `
-          <img src="${match.src}" alt="${match.match_name}">
-          <div class="match-info">
-            <h3>${match.title}</h3>
-            <p>🏆 ${match.event_name}</p>
-            <p class="status ${match.status}">${match.status}</p>
-          </div>
-          <button class="play-btn">▶ Play</button>
-        `;
+      card.innerHTML = `
+        <img src="${match.src}" alt="${match.title}">
+        <div class="match-info">
+          <h3>${match.title}</h3>
+          <p>🏆 ${match.event_name}</p>
+          <p class="status ${match.status}">${match.status}</p>
+        </div>
+        <button class="play-btn">▶ Play</button>
+      `;
 
-        card.querySelector(".play-btn").addEventListener("click", () => {
-          if (match.url) {
-            // Cut everything after `.m3u8`
-            let cleanUrl = url;
-            console.log("Opening url:", cleanUrl);
-            window.open(cleanUrl, "_blank");
-          } else {
-            alert("No adfree_url available for this match!");
-          }
-        });
-
-        matchesDiv.appendChild(card);
+      card.querySelector(".play-btn").addEventListener("click", () => {
+        if (match.url) window.open(match.url, "_blank");
+        else alert("No Stream URL Available");
       });
-    }
 
-    loadMatches();
-  </script>
+      if (match.event_category.toLowerCase() === "sports") {
+        sportsDiv.appendChild(card);
+      } else {
+        musicDiv.appendChild(card);
+      }
+    });
+  }
+
+  loadMatches();
+</script>
+
 </body>
 </html>
