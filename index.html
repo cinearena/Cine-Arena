@@ -67,12 +67,9 @@
 
         card.querySelector(".play-btn").addEventListener("click", () => {
           if (match.url) {
-            // Cut everything after `.m3u8`
-            let cleanUrl = url;
-            console.log("Opening url:", cleanUrl);
-            window.open(cleanUrl, "_blank");
+            window.open(match.url, "_blank");
           } else {
-            alert("No adfree_url available for this match!");
+            alert("No URL available for this match!");
           }
         });
 
