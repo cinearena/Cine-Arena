@@ -4,6 +4,33 @@
   "last_update_time": "31-10-2025",
   "matches": [
     {
+      "event_category": "Sports",
+      "title": "Star Sports 1 Hindi",
+      "src": "https://cricstream4u.github.io/cinearena/star1hindi.jpg",
+      "status": "LIVE",
+      "event_name": "Cricket Live",
+      "match_id": 101001,
+      "url": "https://cricstream4u.github.io/jwplyr/?file=https://example.com/star1hindi.m3u8"
+    },
+    {
+      "event_category": "Sports",
+      "title": "Sony Ten 1",
+      "src": "https://cricstream4u.github.io/cinearena/sonyten1.jpg",
+      "status": "UPCOMING",
+      "event_name": "Football Highlights",
+      "match_id": 101002,
+      "url": "https://cricstream4u.github.io/jwplyr/?file=https://example.com/sonyten1.m3u8"
+    },
+    {
+      "event_category": "Sports",
+      "title": "Eurosport",
+      "src": "https://cricstream4u.github.io/cinearena/eurosport.jpg",
+      "status": "LIVE",
+      "event_name": "Cycling Tournament",
+      "match_id": 101003,
+      "url": "https://cricstream4u.github.io/jwplyr/?file=https://example.com/eurosport.m3u8"
+    },
+    {
       "event_category": "Music",
       "title": "Show Box",
       "src": "https://cricstream4u.github.io/cinearena/showbox.jpg",
