@@ -38,17 +38,18 @@
 
     /* Cards Grid */
     .matches {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
-      gap: 15px;
-   
-/* Force 2 cards per row on mobile */
+  display: grid;
+  gap: 15px;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+}
+
+/* Force exactly 2 cards per row on mobile */
 @media (max-width: 600px) {
   .matches {
-    grid-template-columns: repeat(3, 1fr) !important;
+    grid-template-columns: repeat(2, 1fr) !important;
   }
 }
-    }
+
 
     /* Card Style */
     .match-card {
