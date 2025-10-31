@@ -15,7 +15,7 @@
       "event_category": "Sports",
       "title": "TNT Sports 1",
       "src": "https://cricstream4u.github.io/cinearena/tnt1.jpg",
-      "status": "UPCOMING",
+      "status": "LIVE",
       "match_id": 101002,
       "url": "https://cinearena.github.io/tnt1/"
     },
@@ -23,7 +23,7 @@
       "event_category": "Sports",
       "title": "TNT Sports 2",
       "src": "https://cricstream4u.github.io/cinearena/tnt2.jpg",
-      "status": "UPCOMING",
+      "status": "LIVE",
       "match_id": 101002,
       "url": "https://cricstream4u.github.io/jwmpd/?https://ottb.live.cf.ww.aiv-cdn.net/lhr-nitro/live/dash/enc/f0qvkrra8j/out/v1/f8fa17f087564f51aa4d5c700be43ec4/cenc.mpd?%7CdrmScheme=clearkey&drmLicense=9f51f3dc6313ac8bc668e2d9d1c04dfa:74bc63e5a193454a91ca494975db33f9"
     },
