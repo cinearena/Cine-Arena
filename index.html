@@ -107,6 +107,35 @@
     .play-btn:hover {
       background: linear-gradient(90deg, #ff0055, #009ada);
     }
+
+    .telegram-float {
+  position: fixed;
+  width: 55px;
+  height: 55px;
+  bottom: 20px;
+  right: 20px;
+  background: #0088cc;
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform .3s, box-shadow .3s;
+}
+
+.telegram-float:hover {
+  transform: scale(1.12);
+  box-shadow: 0 12px 18px rgba(0,0,0,0.4);
+}
+
+.telegram-float img {
+  width: 60%;
+  filter: invert(0); /* keep original color */
+}
+
   </style>
 </head>
 
@@ -163,6 +192,11 @@
 
     loadMatches();
   </script>
+
+
+  <a href="https://t.me/cine_arena" class="telegram-float" target="_blank">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" alt="Telegram">
+</a>
 
 </body>
 </html>
