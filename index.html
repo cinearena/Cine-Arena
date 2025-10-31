@@ -3,67 +3,106 @@
 <head>
   <meta charset="UTF-8">
   <title>Cine Arena Live</title>
+
   <style>
-    body { font-family: Arial, sans-serif; background: #f0f0f0; margin: 20px; }
-    h1 { margin-bottom: 10px; }
-    .matches { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 15px; }
-    .match-card {
-      background: rgb(17 24 39 / var(--tw-bg-opacity, 1));
-      padding: 15px;
-      border-radius: 10px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.15);
-      text-align: center;
-      transition: transform .2s;
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #0f0f0f, #1f1f1f);
+      margin: 0;
+      padding: 20px;
+      color: white;
     }
 
-    /* ✅ Make text white */
-    .match-card h3 {
-      color: white !important;
+    /* Pretty Section Heading */
+    .section-title {
+      text-align: center;
+      font-size: 30px;
+      font-weight: 800;
+      margin: 40px 0 20px;
+      text-transform: uppercase;
+      background: linear-gradient(90deg, #ff0077, #00eaff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      position: relative;
     }
-    
-    .match-card:hover { transform: scale(1.03); }
-    .match-card img { width: 100%; border-radius: 8px; }
-    .match-card title { color: white; }
-    .status { font-weight: bold; color: green; }
-    .status.LIVE { color: red; }
-    .status.UPCOMING { color: orange; }
+
+    .section-title::after {
+      content: "";
+      width: 100px;
+      height: 4px;
+      background: linear-gradient(90deg, #ff0077, #00eaff);
+      display: block;
+      margin: 6px auto 0;
+      border-radius: 10px;
+    }
+
+    /* Cards Grid */
+    .matches {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+      gap: 15px;
+    }
+
+    /* Card Style */
+    .match-card {
+      background: rgba(255, 255, 255, 0.07);
+      backdrop-filter: blur(8px);
+      padding: 14px;
+      border-radius: 14px;
+      text-align: center;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+      transition: transform .25s, box-shadow .25s;
+      border: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .match-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 18px rgba(0,0,0,0.6);
+    }
+
+    .match-card img {
+      width: 100%;
+      height: 135px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 8px;
+    }
+
+    .match-card h3 {
+      font-size: 19px;
+      margin: 6px 0;
+      color: #fff;
+    }
+
+    .match-card p {
+      font-size: 14px;
+      opacity: 0.8;
+    }
+
+    /* Status Colors */
+    .status { font-weight: bold; }
+    .LIVE { color: #ff4040; }
+    .UPCOMING { color: #ffae00; }
+
+    /* Play Button */
     .play-btn {
       margin-top: 10px;
-      padding: 8px 12px;
-      background: #007bff;
+      padding: 8px 14px;
+      background: linear-gradient(90deg, #ff0077, #00c3ff);
       border: none;
       border-radius: 6px;
       color: white;
       cursor: pointer;
+      font-size: 14px;
+      transition: 0.3s;
     }
-    .play-btn:hover { background: #0056b3; }
 
-    .section-title {
-  text-align: center;
-  font-size: 28px;
-  font-weight: 800;
-  margin: 30px 0 20px;
-  color: white;
-  position: relative;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  background: linear-gradient(90deg, #ff0066, #00e5ff);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.section-title::after {
-  content: "";
-  display: block;
-  width: 80px;
-  height: 4px;
-  background: linear-gradient(90deg, #ff0066, #00e5ff);
-  margin: 6px auto 0;
-  border-radius: 5px;
-}
-
+    .play-btn:hover {
+      background: linear-gradient(90deg, #ff0055, #009ada);
+    }
   </style>
 </head>
+
 <body>
 
   <h1 class="section-title">📺 Sports Live</h1>
@@ -88,13 +127,14 @@
         card.innerHTML = `
           <img src="${match.src}" alt="${match.title}">
           <h3>${match.title}</h3>
+          <p>${match.event_name || ''}</p>
           <p class="status ${match.status}">${match.status}</p>
           <button class="play-btn">▶ Play</button>
         `;
 
         card.querySelector(".play-btn").onclick = () => {
           if (match.url) window.open(match.url, "_blank");
-          else alert("Stream Not Available!");
+          else alert("Stream Not Available 😔");
         };
 
         if ((match.event_category || "").toLowerCase() === "sports") {
