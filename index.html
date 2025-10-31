@@ -37,14 +37,39 @@
       cursor: pointer;
     }
     .play-btn:hover { background: #0056b3; }
+
+    .section-title {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 800;
+  margin: 30px 0 20px;
+  color: white;
+  position: relative;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  background: linear-gradient(90deg, #ff0066, #00e5ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.section-title::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, #ff0066, #00e5ff);
+  margin: 6px auto 0;
+  border-radius: 5px;
+}
+
   </style>
 </head>
 <body>
 
-  <h1>📺 Sports Live</h1>
+  <h1 class="section-title">📺 Sports Live</h1>
   <div id="sports" class="matches"></div>
 
-  <h1>🎵 Music Live</h1>
+  <h1 class="section-title">🎵 Music Live</h1>
   <div id="music" class="matches"></div>
 
   <script>
