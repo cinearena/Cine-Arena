@@ -5,6 +5,13 @@
   "matches": [
     {
       "event_category": "Sports",
+      "title": "Star Sports-2",
+      "src": "https://cricstream4u.github.io/cinearena/star2.jpg",
+      "status": "LIVE",
+      "match_id": 101004,
+      "url": "https://tvgo.neocities.org/APPTV/jspo?id=Star2%20HINDI%20SD"
+    },{
+      "event_category": "Sports",
       "title": "Willow Sports",
       "src": "https://cricstream4u.github.io/cinearena/willowsports.jpg",
       "status": "LIVE",
@@ -24,7 +31,7 @@
       "title": "TNT Sports 2",
       "src": "https://cricstream4u.github.io/cinearena/tnt2.jpg",
       "status": "LIVE",
-      "match_id": 101002,
+      "match_id": 101003,
       "url": "https://cinearena.github.io/tnt2/"
     }
     
