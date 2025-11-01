@@ -111,61 +111,6 @@
       background: linear-gradient(90deg, #ff0055, #009ada);
     }
 
-     /* Movies Grid */
-    .movies-grid {
-      display: grid;
-      gap: 15px;
-      padding: 20px;
-      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-    }
-
-    /* 2 per row on Mobile */
-    @media (max-width: 600px) {
-      .movies-grid {
-        grid-template-columns: repeat(2, 1fr) !important;
-      }
-    }
-
-    /* Movie Card */
-    .movie-card {
-      background: rgba(255, 255, 255, 0.07);
-      border: 1px solid rgba(255,255,255,0.1);
-      border-radius: 12px;
-      overflow: hidden;
-      text-align: center;
-      transition: 0.3s;
-      cursor: pointer;
-    }
-    .movie-card:hover {
-      transform: scale(1.05);
-      box-shadow: 0 6px 16px rgba(0,0,0,0.6);
-    }
-    .movie-card img {
-      width: 100%;
-      height: auto;
-      object-fit: cover;
-    }
-    .movie-card h3 {
-      padding: 8px;
-      font-size: 16px;
-    }
-
-    /* Load More Button */
-    .load-btn {
-      display: block;
-      width: 70%;
-      margin: 15px auto 36px;
-      padding: 10px;
-      border: none;
-      border-radius: 8px;
-      background: #0086ff;
-      color: white;
-      cursor: pointer;
-      font-size: 16px;
-      transition: .3s;
-    }
-    .load-btn:hover { background: #0070d1; }
-
     .telegram-float {
   position: fixed;
   width: 55px;
@@ -241,23 +186,12 @@
 <div id="overlay" class="fixed inset-0 bg-black bg-opacity-50 hidden z-40 md:hidden"></div>
 
 
-<!-- Search Bar -->
-<div class="px-6 pb-3 w-14 mt-5">
-  <input id="searchInput" type="text" placeholder="Search Movies..." 
-  class="w-full p-3 rounded-lg bg-gray-800 border border-gray-600 outline-none text-white">
-</div>
-
   <!--- Main Content -->
   <h1 class="section-title" style="margin: 5px 0px 5px;">📺 Sports Live</h1>
   <div id="sports" class="matches" style="padding:20px;"></div>
 
   <h1 class="section-title">🎵 Music Live</h1>
   <div id="music" class="matches" style="padding:20px;"></div>
-
-  <h1 class="section-title">🎬 Latest Released Movies</h1>
-
-  <div id="movies" class="movies-grid"></div>
-<button id="loadMore" class="load-btn">Load More</button>
 
   <script>
     async function loadMatches() {
@@ -312,53 +246,6 @@
     overlay.classList.add("hidden");
   });
 </script>
-
-<!--- movies grid -->
-  <script>
-let allMovies = [];
-let index = 0;
-const limit = 20;
-
-async function loadMovies() {
-  const url = "https://raw.githubusercontent.com/cinearena/Cine-Arena/main/movies.json"; 
-  const response = await fetch(url);
-  const data = await response.json();
-  allMovies = data.movies;
-  renderMovies();
-}
-
-function renderMovies() {
-  const grid = document.getElementById("movies");
-  const searchValue = document.getElementById("searchInput").value.toLowerCase();
-
-  const filteredMovies = allMovies.filter(m => m.title.toLowerCase().includes(searchValue));
-
-  grid.innerHTML = "";
-  filteredMovies.slice(0, index + limit).forEach(movie => {
-    grid.innerHTML += `
-      <div class="movie-card" onclick="window.open('${movie.url}', '_blank')">
-        <img src="${movie.image}" alt="${movie.title}">
-        <h3>${movie.title}</h3>
-      </div>`;
-  });
-
-  index += limit;
-
-  document.getElementById("loadMore").style.display =
-    (index >= filteredMovies.length) ? "none" : "block";
-}
-
-document.getElementById("loadMore").addEventListener("click", renderMovies);
-document.getElementById("searchInput").addEventListener("input", () => {
-  index = 0; 
-  renderMovies();
-});
-
-loadMovies();
-</script>
-
-
-
 
   <a href="https://t.me/cine_arena" class="telegram-float" target="_blank">
   <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" alt="Telegram">
