@@ -1,1 +1,32 @@
-Hi
+{
+  "name": "Channels JSON",
+  "telegram": "https://t.me/cine_arena",
+  "last_update_time": "31-10-2025",
+  "matches": [
+    {
+      "event_category": "Sports",
+      "title": "Willow Sports",
+      "src": "https://cricstream4u.github.io/cinearena/willowsports.jpg",
+      "status": "LIVE",
+      "match_id": 101001,
+      "url": "https://cricstream4u.github.io/jwmpd/?https://a170aivottlinear-a.akamaihd.net/OTTB/fra-nitro/live/clients/dash/enc/f60kqesunw/out/v1/a435ed7a00f947deb4369b46d8f2fb70/cenc.mpd?|drmScheme=clearkey&drmLicense=1779c27b9d077a3ba0c9cc1bb9a94b9f:cc5cf3b7928fb9e0a1ee6a8b566f0a8e"
+    },
+    {
+      "event_category": "Sports",
+      "title": "TNT Sports 1",
+      "src": "https://cricstream4u.github.io/cinearena/tnt1.jpg",
+      "status": "LIVE",
+      "match_id": 101002,
+      "url": "https://cinearena.github.io/tnt1/"
+    },
+    {
+      "event_category": "Sports",
+      "title": "TNT Sports 2",
+      "src": "https://cricstream4u.github.io/cinearena/tnt2.jpg",
+      "status": "LIVE",
+      "match_id": 101002,
+      "url": "https://cinearena.github.io/tnt2/"
+    }
+    
+  ]
+}
