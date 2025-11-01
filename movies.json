@@ -1,169 +1,79 @@
 {
   "movies": [
     {
-      "title": "Leo (2023)",
-      "image": "https://m.media-amazon.com/images/M/MV5BNDM5N2U1ZTUtZTY2NC00ZjkxLThiYTItYjAyZjYzYTczZTQ2XkEyXkFqcGdeQXVyMTYyNTQ3NDg@._V1_.jpg",
-      "url": "https://example.com/leo-movie"
+      "title": "Raayan (2024) Original [Hindi & Tamil]| Full Movie",
+      "image": "https://image.tmdb.org/t/p/w500/evHYnCh3oW9TgEIxA1acDnB4YsW.jpg",
+      "url": "https://cricstream4u.github.io/Tu.Jhoothi.Main.Makkaar/"
     },
     {
-      "title": "Jawan (2023)",
-      "image": "https://m.media-amazon.com/images/M/MV5BN2RkMDkzNTktNWU5NC00Zjg1LWFlY2QtZTEwOGJhNzE4MzE5XkEyXkFqcGdeQXVyMTYyNTQ3NDg@._V1_.jpg",
-      "url": "https://example.com/jawan-movie"
+      "title": "Tu Jhoothi Main Makkaar (Full Movie)",
+      "image": "https://catimages.org/images/2023/05/03/Tu-Jhoothi-Main-Makkaar-2023-Hindi-Dubbed-HDRip-Full-Movie-HDHub4u.jpg",
+      "url": "https://cricstream4u.github.io/Tu.Jhoothi.Main.Makkaar/"
     },
     {
-      "title": "KGF Chapter 2 (2022)",
-      "image": "https://m.media-amazon.com/images/M/MV5BODU3MDMxMGItM2VhNy00YjJlLTg5Y2MtNTRmNjEyMjY5NjAzXkEyXkFqcGdeQXVyMTYyNTQ3NDg@._V1_.jpg",
-      "url": "https://example.com/kgf2"
+      "title": "Salaar: Cease Fire – Part 1 (Hindi Dubbed)",
+      "image": "https://image.tmdb.org/t/p/w400/zAug8d6kpBMPyxZvY66q2x8csd.jpg",
+      "url": "https://cricstream4u.github.io/salaar.2023/"
     },
     {
-      "title": "Leo (2023)",
-      "image": "https://m.media-amazon.com/images/M/MV5BNDM5N2U1ZTUtZTY2NC00ZjkxLThiYTItYjAyZjYzYTczZTQ2XkEyXkFqcGdeQXVyMTYyNTQ3NDg@._V1_.jpg",
-      "url": "https://example.com/leo-movie"
+      "title": "Robinhood (2025) WEB-DL [Hindi & Telugu] | Full Movie",
+      "image": "https://image.tmdb.org/t/p/w500/ucWYixRZBvqoXOM83LdmSSn45na.jpg",
+      "url": "https://cinearena.github.io/Robinhood.2025/"
     },
     {
-      "title": "Jawan (2023)",
-      "image": "https://m.media-amazon.com/images/M/MV5BN2RkMDkzNTktNWU5NC00Zjg1LWFlY2QtZTEwOGJhNzE4MzE5XkEyXkFqcGdeQXVyMTYyNTQ3NDg@._V1_.jpg",
-      "url": "https://example.com/jawan-movie"
+      "title": "Hi Nanna (2023) OriginaL [Hindi  & Telugu] | Full Movie",
+      "image": "https://image.tmdb.org/t/p/w400/hhMLtq9m1aK0dpY9Wcq26XeDH2z.jpg",
+      "url": "https://cinearena.github.io/Hi.Nanna.2023/"
     },
     {
-      "title": "KGF Chapter 2 (2022)",
-      "image": "https://m.media-amazon.com/images/M/MV5BODU3MDMxMGItM2VhNy00YjJlLTg5Y2MtNTRmNjEyMjY5NjAzXkEyXkFqcGdeQXVyMTYyNTQ3NDg@._V1_.jpg",
-      "url": "https://example.com/kgf2"
+      "title": "Kantara – A Legend Chapter: 1 (Full Movie)",
+      "image": "https://image.tmdb.org/t/p/w500/ehQPboTPaIMkMUOoNOh8e7pZ5Rp.jpg",
+      "url": "https://cinearena.github.io/Kantara.Chapter-1.2025/"
     },
     {
-      "title": "Leo (2023)",
-      "image": "https://m.media-amazon.com/images/M/MV5BNDM5N2U1ZTUtZTY2NC00ZjkxLThiYTItYjAyZjYzYTczZTQ2XkEyXkFqcGdeQXVyMTYyNTQ3NDg@._V1_.jpg",
-      "url": "https://example.com/leo-movie"
+      "title": "Dhadak 2 (2025) Original [Hindi] | Full Movie",
+      "image": "https://image.tmdb.org/t/p/w400/s3o23GbRXvHPPRm50kqQjjjCoKP.jpg",
+      "url": "https://cinearena.github.io/Dhadak-2.2025/"
     },
     {
-      "title": "Jawan (2023)",
-      "image": "https://m.media-amazon.com/images/M/MV5BN2RkMDkzNTktNWU5NC00Zjg1LWFlY2QtZTEwOGJhNzE4MzE5XkEyXkFqcGdeQXVyMTYyNTQ3NDg@._V1_.jpg",
-      "url": "https://example.com/jawan-movie"
+      "title": "Son of Sardaar 2 (2025) WEB-DL [Hindi] | Full Movie",
+      "image": "https://image.tmdb.org/t/p/w400/k47tmhqiUsmD6UoyoimHVQAjHx9.jpg",
+      "url": "https://cinearena.github.io/-Son.Of.Sardaar-2.2025/"
     },
     {
-      "title": "KGF Chapter 2 (2022)",
-      "image": "https://m.media-amazon.com/images/M/MV5BODU3MDMxMGItM2VhNy00YjJlLTg5Y2MtNTRmNjEyMjY5NjAzXkEyXkFqcGdeQXVyMTYyNTQ3NDg@._V1_.jpg",
-      "url": "https://example.com/kgf2"
+      "title": "Alice in Borderland (Season 3) WEB-DL [Hindi & English]  | NF Series",
+      "image": "https://image.tmdb.org/t/p/w500/w6aOVFbmUWeaZilM2DnWG73cXYI.jpg",
+      "url": "https://cinearena.github.io/Alice.in.Borderland.S03/"
     },
     {
-      "title": "Leo (2023)",
-      "image": "https://m.media-amazon.com/images/M/MV5BNDM5N2U1ZTUtZTY2NC00ZjkxLThiYTItYjAyZjYzYTczZTQ2XkEyXkFqcGdeQXVyMTYyNTQ3NDg@._V1_.jpg",
-      "url": "https://example.com/leo-movie"
+      "title": "The Ba***ds of Bollywood (Season 1) WEB-DL [Hindi] | ALL Episodes [NF Series]",
+      "image": "https://image.tmdb.org/t/p/w500/3Lyy9lbQuEE6RpWep2K1ozcjxjt.jpg",
+      "url": "https://cinearena.github.io/The.Ba---ds.of.Bollywood/"
     },
     {
-      "title": "Jawan (2023)",
-      "image": "https://m.media-amazon.com/images/M/MV5BN2RkMDkzNTktNWU5NC00Zjg1LWFlY2QtZTEwOGJhNzE4MzE5XkEyXkFqcGdeQXVyMTYyNTQ3NDg@._V1_.jpg",
-      "url": "https://example.com/jawan-movie"
+      "title": "Coolie (2025) WEB-DL [Hindi & Tamil] Dual Audio | Full Movie",
+      "image": "https://image.tmdb.org/t/p/w342/kr36awqmziEI5mfUElsHB0pj9zP.jpg",
+      "url": "https://cine-arena.github.io/Coolie-2025/"
     },
     {
-      "title": "KGF Chapter 2 (2022)",
-      "image": "https://m.media-amazon.com/images/M/MV5BODU3MDMxMGItM2VhNy00YjJlLTg5Y2MtNTRmNjEyMjY5NjAzXkEyXkFqcGdeQXVyMTYyNTQ3NDg@._V1_.jpg",
-      "url": "https://example.com/kgf2"
+      "title": "Saiyaara (2025) WEB-DL [Hindi] | Full Movie",
+      "image": "https://image.tmdb.org/t/p/w500/z98O8Eqk3JDlCfUhXok1kwz24xl.jpg",
+      "url": "https://cine-arena.github.io/Saiyaara-2025/"
     },
     {
-      "title": "KGF Chapter 2 (2022)",
-      "image": "https://m.media-amazon.com/images/M/MV5BODU3MDMxMGItM2VhNy00YjJlLTg5Y2MtNTRmNjEyMjY5NjAzXkEyXkFqcGdeQXVyMTYyNTQ3NDg@._V1_.jpg",
-      "url": "https://example.com/kgf2"
+      "title": "Maalik (2025) Original [Hindi] | Full Movie",
+      "image": "https://image.tmdb.org/t/p/w500/rnPeVGkXyGtyLfcLlk5TzMms6ue.jpg",
+      "url": "https://cricstream4u.github.io/Maalik-2025/"
     },
     {
-      "title": "Leo (2023)",
-      "image": "https://m.media-amazon.com/images/M/MV5BNDM5N2U1ZTUtZTY2NC00ZjkxLThiYTItYjAyZjYzYTczZTQ2XkEyXkFqcGdeQXVyMTYyNTQ3NDg@._V1_.jpg",
-      "url": "https://example.com/leo-movie"
+      "title": "Kingdom (2025) Original [Hindi & Telugu] Dual Audio | Full Movie [Saamrajya]",
+      "image": "https://image.tmdb.org/t/p/w500/6x0wmp2LlLqhEbd8XKjJpTHdHsT.jpg",
+      "url": "https://cricstream4u.github.io/kingdom-2025/"
     },
     {
-      "title": "Jawan (2023)",
-      "image": "https://m.media-amazon.com/images/M/MV5BN2RkMDkzNTktNWU5NC00Zjg1LWFlY2QtZTEwOGJhNzE4MzE5XkEyXkFqcGdeQXVyMTYyNTQ3NDg@._V1_.jpg",
-      "url": "https://example.com/jawan-movie"
-    },
-    {
-      "title": "KGF Chapter 2 (2022)",
-      "image": "https://m.media-amazon.com/images/M/MV5BODU3MDMxMGItM2VhNy00YjJlLTg5Y2MtNTRmNjEyMjY5NjAzXkEyXkFqcGdeQXVyMTYyNTQ3NDg@._V1_.jpg",
-      "url": "https://example.com/kgf2"
-    },
-    {
-      "title": "Leo (2023)",
-      "image": "https://m.media-amazon.com/images/M/MV5BNDM5N2U1ZTUtZTY2NC00ZjkxLThiYTItYjAyZjYzYTczZTQ2XkEyXkFqcGdeQXVyMTYyNTQ3NDg@._V1_.jpg",
-      "url": "https://example.com/leo-movie"
-    },
-    {
-      "title": "Jawan (2023)",
-      "image": "https://m.media-amazon.com/images/M/MV5BN2RkMDkzNTktNWU5NC00Zjg1LWFlY2QtZTEwOGJhNzE4MzE5XkEyXkFqcGdeQXVyMTYyNTQ3NDg@._V1_.jpg",
-      "url": "https://example.com/jawan-movie"
-    },
-    {
-      "title": "KGF Chapter 2 (2022)",
-      "image": "https://m.media-amazon.com/images/M/MV5BODU3MDMxMGItM2VhNy00YjJlLTg5Y2MtNTRmNjEyMjY5NjAzXkEyXkFqcGdeQXVyMTYyNTQ3NDg@._V1_.jpg",
-      "url": "https://example.com/kgf2"
-    },
-    {
-      "title": "KGF Chapter 2 (2022)",
-      "image": "https://m.media-amazon.com/images/M/MV5BODU3MDMxMGItM2VhNy00YjJlLTg5Y2MtNTRmNjEyMjY5NjAzXkEyXkFqcGdeQXVyMTYyNTQ3NDg@._V1_.jpg",
-      "url": "https://example.com/kgf2"
-    },
-    {
-      "title": "Leo (2023)",
-      "image": "https://m.media-amazon.com/images/M/MV5BNDM5N2U1ZTUtZTY2NC00ZjkxLThiYTItYjAyZjYzYTczZTQ2XkEyXkFqcGdeQXVyMTYyNTQ3NDg@._V1_.jpg",
-      "url": "https://example.com/leo-movie"
-    },
-    {
-      "title": "Jawan (2023)",
-      "image": "https://m.media-amazon.com/images/M/MV5BN2RkMDkzNTktNWU5NC00Zjg1LWFlY2QtZTEwOGJhNzE4MzE5XkEyXkFqcGdeQXVyMTYyNTQ3NDg@._V1_.jpg",
-      "url": "https://example.com/jawan-movie"
-    },
-    {
-      "title": "KGF Chapter 2 (2022)",
-      "image": "https://m.media-amazon.com/images/M/MV5BODU3MDMxMGItM2VhNy00YjJlLTg5Y2MtNTRmNjEyMjY5NjAzXkEyXkFqcGdeQXVyMTYyNTQ3NDg@._V1_.jpg",
-      "url": "https://example.com/kgf2"
-    },
-    {
-      "title": "Leo (2023)",
-      "image": "https://m.media-amazon.com/images/M/MV5BNDM5N2U1ZTUtZTY2NC00ZjkxLThiYTItYjAyZjYzYTczZTQ2XkEyXkFqcGdeQXVyMTYyNTQ3NDg@._V1_.jpg",
-      "url": "https://example.com/leo-movie"
-    },
-    {
-      "title": "Jawan (2023)",
-      "image": "https://m.media-amazon.com/images/M/MV5BN2RkMDkzNTktNWU5NC00Zjg1LWFlY2QtZTEwOGJhNzE4MzE5XkEyXkFqcGdeQXVyMTYyNTQ3NDg@._V1_.jpg",
-      "url": "https://example.com/jawan-movie"
-    },
-    {
-      "title": "KGF Chapter 2 (2022)",
-      "image": "https://m.media-amazon.com/images/M/MV5BODU3MDMxMGItM2VhNy00YjJlLTg5Y2MtNTRmNjEyMjY5NjAzXkEyXkFqcGdeQXVyMTYyNTQ3NDg@._V1_.jpg",
-      "url": "https://example.com/kgf2"
-    },
-    {
-      "title": "KGF Chapter 2 (2022)",
-      "image": "https://m.media-amazon.com/images/M/MV5BODU3MDMxMGItM2VhNy00YjJlLTg5Y2MtNTRmNjEyMjY5NjAzXkEyXkFqcGdeQXVyMTYyNTQ3NDg@._V1_.jpg",
-      "url": "https://example.com/kgf2"
-    },
-    {
-      "title": "Leo (2023)",
-      "image": "https://m.media-amazon.com/images/M/MV5BNDM5N2U1ZTUtZTY2NC00ZjkxLThiYTItYjAyZjYzYTczZTQ2XkEyXkFqcGdeQXVyMTYyNTQ3NDg@._V1_.jpg",
-      "url": "https://example.com/leo-movie"
-    },
-    {
-      "title": "Jawan (2023)",
-      "image": "https://m.media-amazon.com/images/M/MV5BN2RkMDkzNTktNWU5NC00Zjg1LWFlY2QtZTEwOGJhNzE4MzE5XkEyXkFqcGdeQXVyMTYyNTQ3NDg@._V1_.jpg",
-      "url": "https://example.com/jawan-movie"
-    },
-    {
-      "title": "KGF Chapter 2 (2022)",
-      "image": "https://m.media-amazon.com/images/M/MV5BODU3MDMxMGItM2VhNy00YjJlLTg5Y2MtNTRmNjEyMjY5NjAzXkEyXkFqcGdeQXVyMTYyNTQ3NDg@._V1_.jpg",
-      "url": "https://example.com/kgf2"
-    },
-    {
-      "title": "Leo (2023)",
-      "image": "https://m.media-amazon.com/images/M/MV5BNDM5N2U1ZTUtZTY2NC00ZjkxLThiYTItYjAyZjYzYTczZTQ2XkEyXkFqcGdeQXVyMTYyNTQ3NDg@._V1_.jpg",
-      "url": "https://example.com/leo-movie"
-    },
-    {
-      "title": "Jawan (2023)",
-      "image": "https://m.media-amazon.com/images/M/MV5BN2RkMDkzNTktNWU5NC00Zjg1LWFlY2QtZTEwOGJhNzE4MzE5XkEyXkFqcGdeQXVyMTYyNTQ3NDg@._V1_.jpg",
-      "url": "https://example.com/jawan-movie"
-    },
-    {
-      "title": "KGF Chapter 2 (2022)",
-      "image": "https://m.media-amazon.com/images/M/MV5BODU3MDMxMGItM2VhNy00YjJlLTg5Y2MtNTRmNjEyMjY5NjAzXkEyXkFqcGdeQXVyMTYyNTQ3NDg@._V1_.jpg",
-      "url": "https://example.com/kgf2"
-    }
+      "title": "Inspector Zende (2025) WEB-DL [Hindi] | Full Movie",
+      "image": "https://image.tmdb.org/t/p/w500/uY6xBuKMDMFNQHhGdlEU1NP4gYO.jpg",
+      "url": "https://cine-arena.github.io/inspector-zende/"
+    }    
   ]
 }
