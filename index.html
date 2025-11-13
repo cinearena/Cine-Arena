@@ -1,259 +1,281 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" type="image/x-icon" href="https://cinearena.github.io/astro-jwplyr/faviconimg.jpeg" />
-  <title>Cine Arena</title>
-   <script src="https://cdn.tailwindcss.com"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CineArena.Live </title>
+    <link rel="icon" href="" type="image/x-icon" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+ <style>
+.active{background:red}
+.fix{visibility:hidden}
+.fixed{background:gold;position:fixed}
+.tab-pane{overflow: hidden;
+  border: 1px solid #fff;
+  background-color: #f1f1f1;align:center;vertical-align:middle;vertical-align:middle;align:center;align-items:center;vertical-align:middle;horizontal-align:middle;} 
+  
+ .tab-content{background:SeaShell;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding-top: 2px;  padding-left: 4px;
+  padding-right: 4px;
+  padding-bottom: 64px;
 
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: linear-gradient(135deg, #0f0f0f, #1f1f1f);
-      margin: 0;
-      color: white;
-      padding-top: 60px !important;
-    }
+  transition: 0.3s;
+  font-size: 9px;align:center;vertical-align:middle;vertical-align:middle;align:center;align-items:center;vertical-align:middle;horizontal-align:middle;width:100%}
 
-    /* Pretty Section Heading */
-    .section-title {
-      text-align: center;
-      font-size: 30px;
-      font-weight: 800;
-      margin: 40px 0 5px;
-      text-transform: uppercase;
-      background: linear-gradient(90deg, #ff0077, #00eaff);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      position: relative;
-    }
+</style>
+ 
+<style>
+a:link, a:visited {color: white;
+  
 
-    .section-title::after {
-      content: "";
-      width: 100px;
-      height: 4px;
-      background: linear-gradient(90deg, #ff0077, #00eaff);
-      display: block;
-      margin: 6px auto 0;
-      border-radius: 10px;
-    }
-
-    /* Cards Grid */
-    .matches {
-  display: grid;
-  gap: 15px;
-  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
-}
-
-/* Force exactly 2 cards per row on mobile */
-@media (max-width: 600px) {
-  .matches {
-    grid-template-columns: repeat(2, 1fr) !important;
-  }
-}
-
-
-    /* Card Style */
-    .match-card {
-      background: rgba(255, 255, 255, 0.07);
-      backdrop-filter: blur(8px);
-      padding: 14px;
-      border-radius: 14px;
-      text-align: center;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.4);
-      transition: transform .25s, box-shadow .25s;
-      border: 1px solid rgba(255,255,255,0.1);
-    }
-
-    .match-card:hover {
-      transform: scale(1.05);
-      box-shadow: 0 6px 18px rgba(0,0,0,0.6);
-    }
-
-    .match-card img {
-      width: 100%;
-      height: auto;
-      object-fit: cover;
-      border-radius: 10px;
-      margin-bottom: 8px;
-    }
-
-    .match-card h3 {
-      font-size: 19px;
-      margin: 6px 0;
-      color: #fff;
-    }
-
-    .match-card p {
-      font-size: 14px;
-      opacity: 0.8;
-    }
-
-    /* Status Colors */
-    .status { font-weight: bold; }
-    .LIVE { color: #ff4040; }
-    .UPCOMING { color: #ffae00; }
-
-    /* Play Button */
-    .play-btn {
-      margin-top: 10px;
-      padding: 8px 14px;
-      background: linear-gradient(90deg, #ff0077, #00c3ff);
-      border: none;
-      border-radius: 6px;
-      color: white;
-      cursor: pointer;
-      font-size: 14px;
-      transition: 0.3s;
-    }
-
-    .play-btn:hover {
-      background: linear-gradient(90deg, #ff0055, #009ada);
-    }
-
-    .telegram-float {
-  position: fixed;
-  width: 55px;
-  height: 55px;
-  bottom: 20px;
-  right: 20px;
-  background: #0088cc;
-  color: white;
-  border-radius: 50%;
   text-align: center;
-  box-shadow: 0 8px 16px rgba(0,0,0,0.3);
-  z-index: 999;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  color: black;
+}
+    
+        :root {
+            --bg-dark: gold;
+            --bg-medium: #1E1E1E;
+            --text-primary: #FFFFFF;
+            --text-secondary: #B0B0B0;
+            --telegram-primary: #0088cc;
+            --telegram-hover: #0370a7;
+            --transition-speed: 0.3s;
+        }
+
+            html, body {
+  height: 100%;
+}
+
+body {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: transform .3s, box-shadow .3s;
+  flex-direction: column;
+  background: #fff !important;
+  color: white;
+  margin: 0;
+
 }
 
-.telegram-float:hover {
-  transform: scale(1.12);
-  box-shadow: 0 12px 18px rgba(0,0,0,0.4);
+main {
+  flex: 1; /* ✅ pushes footer down */
+  display: block;
 }
 
-.telegram-float img {
-  width: 60%;
-  filter: invert(0); /* keep original color */
+
+        .container {align:center;
+            max-width: 1600px;
+            margin: 0 auto;
+            padding: 20px;
+            width: 100%;
+        }
+
+        
+
+        .telegram-btn {position: fixed;
+            background-color: gold;
+            
+            padding: 2px 2px;
+            
+            text-decoration: none;
+            
+            transition: all 0.2s ease;
+            
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            white-space: nowrap;
+            width: 100%;
+            flex-shrink: 0;
+        }
+.telegram-btn1 {
+            background-color:red;
+            color: gold;
+            padding: 2px 2px;
+            border-radius: 0px;
+            text-decoration: none;
+            font-weight: 900;
+            transition: all 0.2s ease;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            white-space: nowrap;
+            
+            flex-shrink: 0;
+        }
+.telegram-btn2 {
+            background-color: green;
+            color:red;
+            padding: 2px 2px;
+            border-radius: 0px;
+            text-decoration: none;
+            font-weight: 900;
+            transition: all 0.2s ease;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            white-space: nowrap;
+            
+            flex-shrink: 0;
+        }
+
+        
+
+        .file-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            gap: 25px;
+            width: 100%;
+        }
+
+        .directory-item {
+    background-color: var(--bg-medium);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform var(--transition-speed), box-shadow var(--transition-speed);
+    display: flex;
+    flex-direction: column;
+    align-items: center;     /* ✅ Center content horizontally */
+    justify-content: center;
+    padding: 20px;
+    text-align: center;      /* ✅ Center text below image */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
-  </style>
+.directory-item img {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 8px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;          /* ✅ Forces image to center */
+}
+
+        .directory-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+        }
+
+        
+
+        .directory-item a {
+            color: var(--text-primary);
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: 500;  /* Changed from 500 to 400 for lighter font weight */
+            width: 100%;
+        }
+
+        .directory-item b {
+            font-weight: 500;  /* Changed from default bold to 400 for lighter font weight */
+        }
+
+        @media (max-width: 768px) {
+            .file-container {
+                grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+                gap: 10px;
+            }
+
+            .directory-item {
+                padding: 5px;
+            }
+
+            .directory-item img {
+                width: 80px;
+                height: 70px;
+            }
+
+            .directory-item a {
+                font-size: 0.8rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .file-container {
+                grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+                gap: 10px;
+            }
+
+            .directory-item {
+                padding: 10px;
+            }
+
+            .directory-item img {
+                width: 80px;
+                height: 70px;
+            }
+
+            .directory-item a {
+                font-size: 0.8rem;
+            }
+        } 
+         footer {
+            margin-top: auto;
+        }
+
+    
+    </style>
+  
 </head>
+<body>
 
-<body >
-
-  <!-- Header -->
-
-  <header class="bg-blue-900 text-white flex items-center justify-between px-6 py-3 fixed w-full top-0 z-50">
-
-  <!-- Mobile Menu Button -->
-  <button id="open-menu" class="text-2xl md:hidden mr-2">☰</button>
-
-  <!-- Logo (space from left already due to px-6, but adding extra) -->
-  <a href="https://cinearena.live" class="ml-2">
-    <img src="https://cricstream4u.github.io/cinearena/cineheader.png" class="h-9">
-  </a>
-
-  <!-- Desktop Menu (add extra right spacing) -->
-  <nav class="hidden md:flex space-x-6 text-lg mr-4">
-    <a href="https://cinearena.live" class="hover:text-cyan-300">Home</a>
-    <a href="https://cinearena.github.io/sports/" class="hover:text-cyan-300">Sports</a>
-    <a href="https://cinearena.github.io/music/" class="hover:text-cyan-300">Music</a>
-    <a href="https://cinearena.github.io/movies/" class="hover:text-cyan-300">Movies</a>
-    <a href="https://t.me/cine_arena" target="_blank" class="hover:text-cyan-300">Telegram</a>
-  </nav>
-
-</header>
-
-<div id="sidebar"
-  class="fixed top-0 left-0 h-full w-64 bg-blue-800 text-white transform -translate-x-full transition-transform duration-300 z-50 shadow-2xl md:hidden">
-
-  <div class="p-4 text-center text-xl font-bold border-b border-blue-600">
-    Menu
-  </div>
-
-  <nav class="flex flex-col text-lg">
-    <a href="https://cinearena.live" class="py-3 px-4 hover:bg-blue-700">🏠 Home</a>
-    <a href="https://cinearena.github.io/sports/" class="py-3 px-4 hover:bg-blue-700">⚽ Sports</a>
-    <a href="https://cinearena.github.io/music/" class="py-3 px-4 hover:bg-blue-700">🎵 Music</a>
-    <a href="https://cinearena.github.io/movies/" class="py-3 px-4 hover:bg-blue-700">🎬 Movies</a>
-    <a href="https://t.me/cine_arena" target="_blank" class="py-3 px-4 hover:bg-blue-700">📢 Telegram</a>
-  </nav>
-</div>
-
-<div id="overlay" class="fixed inset-0 bg-black bg-opacity-50 hidden z-40 md:hidden"></div>
+    <!-- 🔵 Header -->
+  <header class="p-4 bg-blue-900 text-white text-center">
+    <a href="https://cinearena.live">
+      <img src="https://cricstream4u.github.io/cinearena/cineheader.png" class="h-10 mx-auto" alt="Cine Arena">
+    </a>
+  </header>
+    
+  <main>   
+<div class="tab-content">
+  <div class="tab-pane">
+<div class="container">
+<div id="app" class="file-container"> </div>
+</div></div><font color="black">This site is not affiliated with any television channel. All content is copyright of their respective owners. We cannot accept any responsibility for the content on this site. We cannot control or influence any audiovisual content on this site. Viewers are expected to be wise in processing the information obtained.All links provided on this site are indexed from third-party websites. We do not host any content<br> contact:https://t.me/stream247</font></div>
 
 
-  <!--- Main Content -->
-  <h1 class="section-title" style="margin: 5px 0px 5px;">📺 Sports Live</h1>
-  <div id="sports" class="matches" style="padding:20px;"></div>
 
-  <h1 class="section-title">🎵 Music Live</h1>
-  <div id="music" class="matches" style="padding:20px;"></div>
+<script>
+const channels = [
+  {"name":"FANCODE","url":"https://cinearena.live/fancode.html","logo":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6EKHQfnbAInwQmzeaGWltd0fJESEub03IJg&s"}, 
+  {"name":"CRICKET TV","url":"https://cinearena.github.io/sports/","logo":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzAy0k4kPf5Y_oGyDmf10vmrba0jOb0xESEg&usqp=CAU"}, 
+  {"name":"JIOSTAR","url":"https://cinearena.live/jiohd.html","logo":"https://m.media-amazon.com/images/I/31GngoiH5pL.png"},
+  {"name":"ZEE5","url":"https://cinearena.live/zee5.html","logo":"https://upload.wikimedia.org/wikipedia/commons/5/5a/Zee5-official-logo.jpeg"},
+  {"name":"SonyLiv","url":"https://cinearena.live/sonyliv.html","logo":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmzj_BmvQP_HPO0wYii4Ljfg1s2VOwl1vbmw&s"}, 
+  {"name":"CINE MOVIES","url":"https://cinearena.live/movies.html","logo":"https://upload.wikimedia.org/wikipedia/en/d/db/The_Movies_Coverart.jpg"},
+  {"name":"All MOVIES","url":"https://cinearena.live/allmovies.html","logo":"https://thumbs.dreamstime.com/b/old-fashioned-movie-film-camera-logo-design-template-black-white-vector-illustration-video-production-logo-design-template-old-136115408.jpg"},
+  {"name":"MUSIC Channels","url":"https://cinearena.live/music.html","logo":"https://img.freepik.com/premium-vector/colorful-musical-note-art-with-vibrant-splashes-musical-note-black-surrounded_53876-651215.jpg?semt=ais_hybrid&w=740&q=80"}
+];
 
-  <script>
-async function loadSection(jsonUrl, container) {
-  const response = await fetch(jsonUrl);
-  const data = await response.json();
+const html = channels.map(item => 
+  `<div class='directory-item'>
+      <a href='${item.url}'><img src='${item.logo}'></a>
+      <a href='${item.url}'><b>${item.name}</b></a>
+   </div>`
+).join("");
 
-  data.matches.forEach(match => {
-    const card = document.createElement("div");
-    card.className = "match-card";
-
-    card.innerHTML = `
-      <img src="${match.src}" alt="${match.title}">
-      <h3>${match.title}</h3>
-      <p>${match.event_name || ''}</p>
-      <p class="status ${match.status}">${match.status}</p>
-      <button class="play-btn">▶ Play</button>
-    `;
-
-    card.querySelector(".play-btn").onclick = () => {
-      if (match.url) window.open(match.url, "_blank");
-      else alert("Stream Not Available 😔");
-    };
-
-    container.appendChild(card);
-  });
-}
-
-async function loadMatches() {
-  const sportsUrl = "https://raw.githubusercontent.com/cinearena/Cine-Arena/main/sports.json";
-  const musicUrl = "https://raw.githubusercontent.com/cinearena/Cine-Arena/main/music.json";
-
-  const sportsDiv = document.getElementById("sports");
-  const musicDiv = document.getElementById("music");
-
-  loadSection(sportsUrl, sportsDiv);
-  loadSection(musicUrl, musicDiv);
-}
-
-loadMatches();
+document.querySelector("#app").insertAdjacentHTML("afterbegin", html);
 </script>
 
 
 
- <script>
-  const sidebar = document.getElementById("sidebar");
-  const overlay = document.getElementById("overlay");
-  const openMenu = document.getElementById("open-menu");
+</main> 
+<footer class="bg-blue-900 text-white text-center py-4 mt-8">
+  <p>© 2025 Cine Arena • Live Sports & Entertainment</p>
+  <p class="text-sm opacity-80">Join Telegram: <a href="https://t.me/cine_arena" class="text-cyan-300">Click Here</a></p>
+</footer>
 
-  openMenu.addEventListener("click", () => {
-    sidebar.classList.remove("-translate-x-full");
-    overlay.classList.remove("hidden");
-  });
-
-  overlay.addEventListener("click", () => {
-    sidebar.classList.add("-translate-x-full");
-    overlay.classList.add("hidden");
-  });
-</script>
-
-  <a href="https://t.me/cine_arena" class="telegram-float" target="_blank">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" alt="Telegram">
-</a>
-
+    
 </body>
 </html>
