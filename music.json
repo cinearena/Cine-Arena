@@ -10,7 +10,7 @@
       "src": "https://cricstream4u.github.io/cinearena/showbox.jpg",
       "status": "LIVE",
       "match_id": 137890,
-      "url": "https://cinearena.github.io/player/jw-hls.html?video=https://epiconvh.akamaized.net/live/showbox/master.m3u8"
+      "url": "https://cinearena.live/player/jw-hls.html?video=https://epiconvh.akamaized.net/live/showbox/master.m3u8"
     },
     {
       "event_category": "Music",
@@ -18,7 +18,7 @@
       "src": "https://cricstream4u.github.io/cinearena/b4umusic.jpg",
       "status": "LIVE",
       "match_id": 137891,
-      "url": "https://cinearena.github.io/player/jw-hls.html?video=https://amg00877-b4unew-amg00877c3-lg-in-5261.playouts.now.amagi.tv/playlist.m3u8"
+      "url": "https://cinearena.live/player/jw-hls.html?video=https://amg00877-b4unew-amg00877c3-lg-in-5261.playouts.now.amagi.tv/playlist.m3u8"
     },
     {
       "event_category": "Music",
@@ -26,7 +26,7 @@
       "src": "https://cricstream4u.github.io/cinearena/yrfmusic.jpg",
       "status": "LIVE",
       "match_id": 137892,
-      "url": "https://cinearena.github.io/player/jw-hls.html?video=https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg01412-xiaomiasia-yrfmusic-xiaomi/playlist.m3u8"
+      "url": "https://cinearena.live/player/jw-hls.html?video=https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg01412-xiaomiasia-yrfmusic-xiaomi/playlist.m3u8"
     },
     {
       "event_category": "Music",
@@ -34,7 +34,7 @@
       "src": "https://cricstream4u.github.io/cinearena/masti.jpg",
       "status": "LIVE",
       "match_id": 137893,
-      "url": "https://cinearena.github.io/player/jw-hls.html?video=https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26c7309312/mastiii/master.m3u8"
+      "url": "https://cinearena.live/player/jw-hls.html?video=https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26c7309312/mastiii/master.m3u8"
     },
     {
       "event_category": "Music",
@@ -42,7 +42,7 @@
       "src": "https://cricstream4u.github.io/cinearena/joomusic.jpg",
       "status": "LIVE",
       "match_id": 137894,
-      "url": "https://cinearena.github.io/player/jw-hls.html?video=https://livecdn.live247stream.com/joomusic/tv/playlist.m3u8"
+      "url": "https://cinearena.live/player/jw-hls.html?video=https://livecdn.live247stream.com/joomusic/tv/playlist.m3u8"
     },
     {
       "event_category": "Music",
@@ -50,7 +50,7 @@
       "src": "https://cricstream4u.github.io/cinearena/9xjalwa.jpg",
       "status": "LIVE",
       "match_id": 137895,
-      "url": "https://cinearena.github.io/player/jw-hls.html?video=https://amg01281-9xmediapvtltd-9xjalwa-samsungin-goszf.amagi.tv/playlist/amg01281-9xmediapvtltd-9xjalwa-samsungin/playlist.m3u8"
+      "url": "https://cinearena.live/player/jw-hls.html?video=https://amg01281-9xmediapvtltd-9xjalwa-samsungin-goszf.amagi.tv/playlist/amg01281-9xmediapvtltd-9xjalwa-samsungin/playlist.m3u8"
     }
   ]
 }
